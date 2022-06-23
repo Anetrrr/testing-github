@@ -1,0 +1,72 @@
+
+.hero {
+     display: flex;
+     flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    position:relative;
+   
+}
+.hero .content {
+    text-align: left;
+    margin-top: 24%;
+    font-family: 'Inter';
+    display: column;
+    padding: 5px 0 7px 30px;
+}
+.input {
+    padding-left: 30px;
+}
+.hero .title {
+   font-size:1.4rem;
+   padding-bottom: 10px;
+}
+.hero .headline {
+    font-size:4rem ;
+    font-weight: 500;
+ }
+ .hero .note {
+    font-size: 1.5rem;
+    width: 70%;
+ }
+
+ .hero .btn {
+    margin: 1rem 2rem;
+ }
+
+ .hero .signup {
+    border: 2px red solid;
+    margin-top: 30%;
+ }
+
+ .hero .button{
+    
+    
+    width: auto;
+    display: flex;
+    height: 90px;
+    
+ }
+ .hero span{
+    color: #066163;
+ }
+.button .btn{
+
+        border: #066163 2px solid;
+        border-radius: 30px;
+  
+        width: 200px;
+        height: 50px;
+        align-items: center;
+        color:var(--bglight);
+        font-size: 1rem;
+        text-align: center;
+        
+        
+}
+
+
+@media screen and (max-width: 1240px) {
+    display: flex;
+}
+    

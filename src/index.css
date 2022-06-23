@@ -1,13 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap');
+
+:root {
+  --txtcolor:#06283D;
+  --bglight: #DFF6FF;
+  --bgmid: #47B5FF;
+  --bgdark: #1363DF;
+  --bgblack: #06283D;
+  --bggreenish: #066163;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0rem;
+
+}
+
+h1, p, a {
+  color: var(--txtcolor);
+  font-family: 'Inter';
+  font-weight: 600;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Ubuntu' 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* background: url(../src/assets/usedoc.jpeg); */
+  background:#DFF6FF;
+  
+  
+  
+  height: 100vh;
+  color: var(--bglight);
+  position: relative;
+}
+
+
+.header h1 {
+  color: var(--bglight);
+
+}
+ ul > li {
+  color: var(--bglight);
+}
+
+ul {
+  list-style-type: none;
+  
+}
+a {
+  text-decoration: none;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+  .btn {
+    padding: 15px 32px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    background: #066163;
+    border-radius: 30px;
+   font-weight: 700;
+    border: 2px solid #066163;
+    cursor: pointer;
+    color: var(--bglight);
+        width: 200px;
+        height: 50px;
+        align-items: center;
+        color:var(--bglight);
+        
+        text-align: center;
+  }
+  input {
+    width: 800px;
+    height: 50px;
+    border-radius: 4px;
+    border: none;
+    font-size: 20px;
+    
+  }
+  .btn-light {
+    
+  }
+  .span{
+    color: #066163;
+
+  }
+  .btn:hover {
+    background: transparent;
+    border: 2px solid #066163;
+    transition: all ease-in-out .2s;
+  }
+

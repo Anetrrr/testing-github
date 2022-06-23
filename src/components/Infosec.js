@@ -25,3 +25,4 @@ const infosec = () => {
 }
 
 export default infosec
+

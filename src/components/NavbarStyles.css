@@ -15,6 +15,12 @@
     justify-content: space-between;
     
 }
+.login-hover li{
+    display: none;
+}
+
+
+
 .nav-menu li {
     padding: 1rem 1rem;
     

@@ -12,24 +12,23 @@
 }
 *{
   font-family: 'Poppins', sans-serif;
-  margin:0; padding: 0;
+  margin:0; 
+  padding: 0;
   box-sizing: border-box;
-  outline: none; border: none;
-  text-transform: capitalize;
-  transition: all .2s ease-out;
-  text-decoration: none;
- 
 }
+
 h1, p, a {
   color: var(--txtcolor);
   font-family: 'Inter';
   font-weight: 600;
 }
+
 html{
-  font-size: 90%;
   overflow-x: hidden;
   scroll-padding-top: 7rem;
   scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
 }
 
 body {
@@ -40,15 +39,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: #F7ecde;
-
-  /* background: url(../src/assets/usedoc.jpeg); */
-
-  
-  
-  
-
-
-  
+  /* background: url(../src/assets/usedoc.jpeg); */  
 }
 
 

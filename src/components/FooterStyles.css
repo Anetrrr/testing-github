@@ -1,28 +1,18 @@
-
-
  .footer {
     width: 100%;
-    background:#06283D;
+    
     padding: 2rem 0 1rem 0;
-    background-size: auto;
-    color: #DFF6FF;
-
+    
+   color: #fff;
+    
+    background: #18978F;
+   
  }
- .footer-container {
-    max-width: 950px;
+ .footer .footer-container {
+    width: auto;
     margin: auto;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-gap: 40px;
-    color: #DFF6FF;
- }
- .footer .left {
-    height: 100%;
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-
+    display: flex;  
+    
  }
  .footer .right {
     height: 100%;
@@ -43,12 +33,18 @@
  }
  .footer .social{
     padding-top: 20px;
+    background:transparent;
+
  }
 
- .footer .locaiton h5{
+ .footer-element{
+   flex-basis: 20%;
+ }
+
+ .footer .location h5{
     padding-bottom: .5rem;
  }
- .footer .locaiton h4{
+ .footer .location h4{
     padding-bottom: 0;
  }
  @media screen and (max-width: 650px){

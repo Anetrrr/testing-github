@@ -11,9 +11,11 @@
     z-index: 10;
     background: #F7ecde;
 }
+
 .nav-menu {
     display: flex;
     justify-content: space-between;
+   
     
 }
 .login-hover li{
@@ -21,6 +23,7 @@
 }
 .nav-menu li {
     padding: 1rem 1rem;
+    background: #F7ecde;
 }
 .nav-menu a {
     font-size: 1.2rem;

@@ -1,42 +1,37 @@
+*{
+  background: #F7ecde;
+}
+
 .main-Register {
-    display: -webkit-box;
-    display: -ms-flexbox;
+   
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  justify-content: center;
     height: 100vh;
     width: 100vw;
     overflow-x: hidden;
   }
   
   .main-Register .left-side {
-    -webkit-box-flex: 0.33;
-        -ms-flex: 0.33;
-            flex: 0.33;
-    background: #26343D;
+  
+            flex: 0.6;
+    background: url(../assets/healthcare4.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
   }
   
   .main-Register .left-side .header {
     height: 15rem;
     margin-top: 2rem;
+    
+    
+    
   }
   
-  .main-Register .left-side .header #logo-img {
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
   
-  .main-Register .left-side .body {
-    height: 10rem;
-    margin-top: 2rem;
-    background: white;
-  }
+  
+ 
   
   .main-Register .left-side .body #reg-img {
     height: 100%;
@@ -48,20 +43,14 @@
     color: white;
     padding: 1.8rem 0.8rem;
     text-align: left;
-    font-size: smaller;
+    font-size: 2rem;
   }
   
   .main-Register .right-side {
-    -webkit-box-flex: 0.67;
-        -ms-flex: 0.67;
-            flex: 0.67;
-    display: -webkit-box;
-    display: -ms-flexbox;
+            flex: 0.4;
+   
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+          flex-direction: column;
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
@@ -70,20 +59,21 @@
   .main-Register .right-side .top-right {
     float: right;
     margin-right: 1rem;
-    margin-top: .5rem;
-    font-size: 12px;
+    margin-top: 2rem;
+    font-size: 22px;
+    color: #18978F;
   }
   
   .main-Register .right-side .top-right #Links-signin {
-    text-decoration: none;
+    text-decoration: underline;
     font-style: 300;
     margin-left: .3rem;
     cursor: pointer;
-    color: gray;
+    color: #26343D;
   }
   
   .main-Register .right-side .top-right #Links-signin:hover {
-    color: black;
+    color: #26343D;
   }
   
   .main-Register .right-side .body-right {
@@ -96,18 +86,18 @@
     width: 60%;
     margin: 2rem auto;
     padding-top: 1rem;
-    -webkit-box-shadow: 0rem 0rem 2rem 0.1rem #48ea98;
-            box-shadow: 0rem 0rem 2rem 0.1rem #48ea98;
+  
     border-radius: 0.5rem;
   }
   
   .main-Register .right-side .body-right .container .input-group {
     width: 100%;
     position: relative;
+    
   }
   
   .main-Register .right-side .body-right .container .input-group h5 {
-    font-size: small;
+    font-size: 16px;
     font-weight: 300;
     color: gray;
     position: absolute;
@@ -120,10 +110,14 @@
   .main-Register .right-side .body-right .container .input-group input {
     margin: 1.2rem auto;
     width: 60%;
-    border: none;
+    border-top: none;
     padding: 0.5rem 0.5rem;
-    -webkit-box-shadow: 0.1rem 0.1rem 0.3rem 0.1rem gray;
-            box-shadow: 0.1rem 0.1rem 0.3rem 0.1rem gray;
+   
+  }
+  .main-Register .right-side .body-right{
+    background: #F7ecde;
+    display: flex;
+    justify-content: center;
   }
   
   .main-Register .right-side .body-right .container .input-group input:focus {
@@ -132,48 +126,18 @@
   
   .main-Register .right-side .body-right #sbtn {
     width: 63%;
+    height: 50px;
     background: #26343D;
     color: white;
     cursor: pointer;
     border: none;
     padding: 0.5rem 2.5rem;
-    -webkit-transition: all 0.3s ease-in-out;
+   
     transition: all 0.3s ease-in-out;
   }
   
   .main-Register .right-side .body-right #sbtn:hover {
-    -webkit-box-shadow: 0.5rem 0.5rem 1rem 0.1rem gray;
-            box-shadow: 0.5rem 0.5rem 1rem 0.1rem gray;
+   background:#18978F;
+   color: #F7ecde;
   }
 
-/*
-body{
-    background: #f2f2f2;
-    height: 100v ;
-}
-.signup form{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    ;
-}
-
-.signup input {
-    width: 400px;
-    height: 23px;
-    border-radius: 4px;
-    border: none;
-    font-size: 20px;
-    justify-content: flex-end;
-}
-button {
-    width: 500px;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    background: green;
-}
-
-#sbtn {
-    border: 2px red solid;
-}
-*/

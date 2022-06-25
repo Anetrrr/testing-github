@@ -9,6 +9,7 @@
     align-items: center;
     padding: 2rem;
     z-index: 10;
+    background: #F7ecde;
 }
 .nav-menu {
     display: flex;
@@ -18,14 +19,9 @@
 .login-hover li{
     display: none;
 }
-
-
-
 .nav-menu li {
     padding: 1rem 1rem;
-    
 }
-
 .nav-menu a {
     font-size: 1.2rem;
     font-weight: 500;
@@ -34,9 +30,12 @@
 }
 .nav-menu a:hover{
     color: var(--bggreenish);
-    
+
 }
 
+.btn-login {
+
+}
 .hamburger{
     display: none;
 }
@@ -67,19 +66,18 @@
 }
 
 .nav-menu a {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     
     
     
 }
-.signup-btn {
-    border: var(--bgdark) 2px solid;
-    border-radius: 30px;
-    margin: 30px;
-    width: 200px;
+.btn-login{
+    border:none;
+    background: #18978F;
+    width: 150px;
     height: 50px;
-    align-items: center;
-    
-    background-color: var(--bgdark);
-    
+    border-radius: 50px;
+    color:#F7ecde;
+    font-size: 1.1rem;
+
 }

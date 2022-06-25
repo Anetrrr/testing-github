@@ -26,7 +26,7 @@ const Register = () => {
                     <div className="body">
                         <img src={doctor} id='reg-img' alt="" srcset="" />
                     </div> */}
-                 <p>New Here? Please Register </p>
+                 {/* <p>New Here? Please Register </p> */}
             </div>
             <div className="right-side">
                <div className="top-right">
@@ -37,7 +37,7 @@ const Register = () => {
             </div>
             <div className="body-right">
                         <div className="container">
-                        <h1>Create Account!</h1>
+                        <h1>Welcome! Create Account</h1>
                         <form onSubmit={handelsubmit}>
                             <div className="input-group">
                             <h5> First Name</h5>
@@ -64,7 +64,7 @@ const Register = () => {
                                 <input type="password" value={pwd2}
                                 onChange={(e)=>{setpwd2(e.target.value)}} name="pwd" id="pwd2" />
                             </div>
-                            <button type="submit" id='sbtn' value="Submit" onClick='submit()'></button>
+                            <button type="submit" id='sbtn' value="Submit" onClick='submit()'>Submit</button>
                             </form>
                         </div>
 

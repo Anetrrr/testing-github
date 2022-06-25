@@ -1,5 +1,7 @@
 import React, {useState} from 'react'
 import './NavbarStyles.css'
+import { FaHandHoldingMedical } from 'react-icons/fa';
+
 import { FaBars, FaTimes} from 'react-icons/fa'
 import {Link} from 'react-router-dom'
 import '../index.js'
@@ -8,7 +10,7 @@ function Navbar() {
     const handleClick = () => SetClick(!click);
   return (
     <div className='header'>
-        <Link to='/'><h1>MyHealthApp</h1></Link>
+        <Link to='/'><FaHandHoldingMedical/><h1>MyHealthApp</h1></Link>
         <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li>
             <Link to='/'>Home</Link>
@@ -20,7 +22,7 @@ function Navbar() {
             <Link to='/training'>List Practice</Link>
             </li>
             
-            <Link to='/contact' className='btn'>Login / Sign up<ul className='login-hover'>
+            <Link to='/contact' className='btn'><button className='btn-login'>Login / Sign up</button><ul className='login-hover'>
               <li><Link to='/patient/login'>Login as patient</Link></li>
               <li><Link to='/practice/login'>Login as practice</Link></li>
               </ul></Link>

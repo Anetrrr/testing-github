@@ -11,10 +11,10 @@ const Login = () => {
                 <form className='returning-user'>
                 
                 <label> Email: </label>
-                <input type='text>' required></input>
+                <input type='text>' required></input><br></br>
                 <label> Password: </label>
-                <input type='text>' required></input>
-                <button type='submit'>Submit</button>
+                <input type='text>' required></input><br></br>
+                <button className='btn-submit' type='submit'>Submit</button>
                 </form>
         </div>
         </div>

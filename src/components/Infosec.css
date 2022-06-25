@@ -2,23 +2,65 @@
 .hero {
      display: flex;
      flex-direction: column;
-    width: 100%;
+    width: auto;
+    height: 100vh;
     justify-content: space-between;
     position:relative;
+    background: #f7ecde;
    
+}
+.btn-start{
+   width: 160px;
+   border: none;
+   border-radius: 50px;
+   height: 60px;
+   text-align: center;
+   align-items: center;
+   padding: 1rem;
+   background: #18978F;
+   color: #f7ecde;
+   font-size: 1.7rem;
+}
+.btn-start:hover{
+   transition: ease-in .3s;
+   border:#18978F 2px solid;
+   background: transparent;
+   color: #18978F;
+
+}
+
+.doc-img{
+   margin-top: 6rem;
+   margin-right: 2rem;
+}
+#hero-img{
+   margin-top: 2rem;
+   width: 900px;
+   height: 600px;
+   
+   
+}
+.hero-container {
+   display: flex;
+   justify-content: space-around
+   ;
 }
 .hero .content {
     text-align: left;
-    margin-top: 24%;
+    margin-top: 15%;
     font-family: 'Inter';
     display: column;
     padding: 5px 0 7px 30px;
 }
+.hero .content .span{
+   color: #18978F;
+ }
+
 .input {
     padding-left: 30px;
 }
 .hero .title {
-   font-size:1.4rem;
+   font-size:2rem;
    padding-bottom: 10px;
 }
 .hero .headline {
@@ -26,12 +68,8 @@
     font-weight: 500;
  }
  .hero .note {
-    font-size: 1.5rem;
+    font-size: 2.2rem;
     width: 70%;
- }
-
- .hero .btn {
-    margin: 1rem 2rem;
  }
 
  .hero .signup {
@@ -44,26 +82,14 @@
     
     width: auto;
     display: flex;
+    margin-top: 2rem;
     height: 90px;
     
  }
  .hero span{
     color: #066163;
  }
-.button .btn{
 
-        border: #066163 2px solid;
-        border-radius: 30px;
-  
-        width: 200px;
-        height: 50px;
-        align-items: center;
-        color:var(--bglight);
-        font-size: 1rem;
-        text-align: center;
-        
-        
-}
 
 
 @media screen and (max-width: 1240px) {

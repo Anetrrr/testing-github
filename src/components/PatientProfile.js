@@ -11,6 +11,7 @@ const PatientProfile = () => {
                     </div> 
                     <div className='content'>
                         <h2>Ben Foster</h2>
+                        <h3>Benin</h3>
                     </div>
 
 

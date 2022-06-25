@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import {Link} from 'react-router-dom'
 import doctor from '../assets/doctor1.jpg'
 import './RegisterStyles.css'
+import RPatientLogin from '../routes/RPatientLogin'
 // import '../index.js'
 
 const Register = () => {
@@ -11,6 +12,7 @@ const Register = () => {
   const[pwd1,setpwd1]=useState('');
   const[pwd2,setpwd2]=useState('');
   
+    
   const handelsubmit=(e)=>{
       e.preventDefault();
   }
@@ -30,7 +32,7 @@ const Register = () => {
                <div className="top-right">
                        <p>Already have an Account?
                       
-                          <Link id='Links-signin' to='/'>Sign In</Link>   
+                          <Link id='Links-signin' to={<RPatientLogin />}>Sign In</Link>   
                           </p> 
             </div>
             <div className="body-right">
@@ -62,7 +64,7 @@ const Register = () => {
                                 <input type="password" value={pwd2}
                                 onChange={(e)=>{setpwd2(e.target.value)}} name="pwd" id="pwd2" />
                             </div>
-                                <Link to='/patient/user'></Link><button type="submit" id='sbtn' value="Submit"></button>
+                            <button type="submit" id='sbtn' value="Submit" onClick='submit()'></button>
                             </form>
                         </div>
 

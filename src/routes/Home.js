@@ -10,12 +10,7 @@ const Home = () => {
     <div>
         <Navbar/>
         <Infosec/>
-        <Categories />
-        <SearchFilter />
         <Footer />
-        
-        
-
     </div>
   )
 }

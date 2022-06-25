@@ -10,19 +10,22 @@ function Navbar() {
     const handleClick = () => SetClick(!click);
   return (
     <div className='header'>
-        <Link to='/'><FaHandHoldingMedical/><h1>MyHealthApp</h1></Link>
+      <Link to='/' className='nav-brand'>
+        <FaHandHoldingMedical />
+        <h1>MyHealthApp</h1>
+      </Link>
         <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-            <li>
+          <li>
             <Link to='/'>Home</Link>
-            </li>
-            <li>
+          </li>
+          <li>
             <Link to='/pricing'>About</Link>
-            </li>
-            <li>
+          </li>
+          <li>
             <Link to='/training'>List Practice</Link>
-            </li>
+          </li>
             
-            <Link to='/contact' className='btn'><button className='btn-login'>Login / Sign up</button><ul className='login-hover'>
+          <Link to='/contact' className='btn'><button className='btn-login'>Login / Sign up</button><ul className='login-hover'>
               <li><Link to='/patient/login'>Login as patient</Link></li>
               <li><Link to='/practice/login'>Login as practice</Link></li>
               </ul></Link>

@@ -51,9 +51,10 @@
    display: column;
    padding: 5px 0 7px 30px;
 }
-.hero .content .span{
+.content .span{
    color: #18978F;
- }
+}
+
 .hero .title {
    font-size:1.3rem;
    padding-bottom: 10px;

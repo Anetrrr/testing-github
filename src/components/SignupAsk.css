@@ -1,0 +1,33 @@
+
+
+.options{
+    display: flex;
+    flex-direction: column;
+    
+    height: 10rem;
+    width: 900px;
+    padding: 3rem;
+    justify-content: center;
+    align-items: 3rem;
+    position: relative;
+    border: none;
+
+}
+
+.patient-option {
+    color: rgb(255, 255, 255);
+    border: 2px white solid;
+    margin: 1rem;
+    font-size: 1.7rem;
+    padding: 1rem;
+    background: transparent;
+    font-family: 'Poppins';
+}
+.patient-option:hover {
+    transition: all .2s ease-in-out;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    border: 2px solid orange;
+
+}

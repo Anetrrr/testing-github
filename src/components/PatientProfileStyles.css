@@ -8,11 +8,13 @@
 .full-page{
     display: flex;
 }
-body {
+.full-page {
   font-family: 'Poppins', sans-serif;
   align-items: center;
   justify-content: flex-start;
-    background: #18978F;
+    background: url(../assets/undraw_doctors_hwty.svg);
+    background-repeat: no-repeat;
+    
     
   min-height: 100vh;
 }
@@ -27,7 +29,7 @@ ul {
 /* Utilities */
 .card::after,
 .card img {
-  border-radius: 50%;
+  border-radius: 20%;
 }
 body,
 .card,
@@ -38,13 +40,16 @@ body,
 .card {
   padding: 2.5rem 2rem;
   border-radius: 10px;
-  background-color: rgba(255, 255, 255, .5);
-  max-width: 500px;
+  background-color: #18978F;
+  max-width: 699px;
   box-shadow: 0 0 30px rgba(0, 0, 0, .15);
   margin: 1rem;
-  position: relative;
+  /* position: relative; */
+  height: 500px;
+  font-size: 1.6rem;
   transform-style: preserve-3d;
   overflow: hidden;
+ 
 }
 .card::before,
 .card::after {
@@ -70,28 +75,31 @@ body,
 }
 
 .card img {
-  width: 8rem;
+  width: 9rem;
   min-width: 80px;
   box-shadow: 0 0 0 5px #FFF;
 }
 
 .infos {
   margin-left: 1.5rem;
+  
 }
 
 .name {
   margin-bottom: 1rem;
+  width: 300px;
+  font-size: 2rem;
 }
 .name h2 {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 .name h4 {
-  font-size: .8rem;
+  font-size: 1rem;
   color: #333
 }
 
 .text {
-  font-size: .9rem;
+  font-size: 1.2rem;
   margin-bottom: 1rem;
 }
 

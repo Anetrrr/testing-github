@@ -5,6 +5,7 @@ import DoctorList from './DoctorList'
 import './PatientProfileStyles.css'
 
 const PatientProfile = () => {
+  console.log('hello, i got to patient profile')
   return (
     <div className='full-page'>
     <div class="card">
@@ -28,10 +29,11 @@ const PatientProfile = () => {
           
       </select> 
       <div class="links">
-        <Routes>
-      <Link to = 'https://google.com/'><button class="follow" href='www.google.com'></button></Link>
-      </Routes>
-        <button class="view">My profile</button>
+        
+      <a href="https://www.calendly.com/anetorataga" className="follow">
+        <button className='follow'>Calender</button></a>
+    
+        <button className="view">My profile</button>
       </div>
     </div>
   </div>

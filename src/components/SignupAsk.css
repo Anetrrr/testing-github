@@ -15,12 +15,12 @@
 }
 
 .patient-option {
-    color: rgb(255, 255, 255);
+    color: orange;
     border: 2px white solid;
     margin: 1rem;
     font-size: 1.7rem;
     padding: 1rem;
-    background: transparent;
+    background: #18978F;
     font-family: 'Poppins';
 }
 .patient-option:hover {

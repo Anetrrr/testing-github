@@ -20,7 +20,7 @@
     margin: 1rem;
     font-size: 1.7rem;
     padding: 1rem;
-    background: transparent;
+    background: #18978F;
     font-family: 'Poppins';
 }
 .patient-option:hover {
@@ -28,6 +28,6 @@
     border-right: none;
     border-left: none;
     border-top: none;
-    border: 2px solid orange;
+    border: 2px solid white;
 
 }

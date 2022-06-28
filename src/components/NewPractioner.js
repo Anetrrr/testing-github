@@ -4,8 +4,8 @@ import './NewPractioner.css'
 
 const NewPractioner = () => {
   return (
-    <div className='card-container'>
-            <div className='card'>
+    <div className='card-container-new-prac'>
+            <div className='card-new-prac'>
                 <h2>New Practitioner</h2>
                 <form className='new-user'>
                 <label> First name: </label>
@@ -30,8 +30,8 @@ const NewPractioner = () => {
                 <label> Email: </label>
                 <input type='text>' required></input><br></br>
                 <label> Password: </label>
-                <input type='text>' required></input><br></br>
-                <button type='submit'>Submit</button>
+                <input type='text' required></input><br></br>
+                <button className='sub'type='submit'>Submit</button>
                 <h5>Already have an account? </h5><button>Log In</button>
                 </form>
             </div>

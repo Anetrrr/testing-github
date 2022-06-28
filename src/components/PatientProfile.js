@@ -8,29 +8,29 @@ const PatientProfile = () => {
   console.log('hello, i got to patient profile')
   return (
     <div className='full-page'>
-    <div class="card">
+    <div className="card">
       <h4>Welcome, Bradley. How are you feeling today?</h4>
-    <div class="img">
+    <div Name="img">
 
       <img src={image} alt="pic"/>
     </div>
-    <div class="infos">
-      <div class="name">
+    <div className="infos">
+      <div className="name">
         <h2>Bradley Steve</h2>
         <h4>@bradsteve</h4>
       </div>
-      <p class="text">
+      <p className="text">
         What's your location at the moment?
       </p>
-      <select class="stats">
+      <select className="stats">
         <option className='option'>Lagos</option>
         <option className='option'>Abuja</option>
         <option className='option'>Enugu</option>
           
       </select> 
-      <div class="links">
+      <div className="links">
         
-      <a href="https://www.calendly.com/anetorataga" className="follow">
+      <a href="https://www.calendly.com/anetorataga" NameName="follow">
         <button className='follow'>Calender</button></a>
     
         <button className="view">My profile</button>

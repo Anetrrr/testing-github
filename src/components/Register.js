@@ -20,19 +20,13 @@ const Register = () => {
   return (
         <div className='main-Register'>
           <div className="left-side">
-                    {/* <div className="header">
-                        <img src={doctor} id='logo-img' alt="" srcset="" />
-                    </div>
-                    <div className="body">
-                        <img src={doctor} id='reg-img' alt="" srcset="" />
-                    </div> */}
-                 {/* <p>New Here? Please Register </p> */}
+                    
             </div>
             <div className="right-side">
                <div className="top-right">
                        <p>Already have an Account?
                       
-                          <Link id='Links-signin' to={<RPatientLogin />}>Sign In</Link>   
+                          <Link id='Links-signin' to='/patient/login'>Sign In</Link>   
                           </p> 
             </div>
             <div className="body-right">

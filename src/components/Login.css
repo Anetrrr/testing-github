@@ -1,28 +1,35 @@
 .signup .card-container .card{
     display:flex;
     flex-direction: column;
-    width: 700px;
+    justify-content: center;
+    align-items: center;
     padding-left: 2rem;
     margin-top: 3rem;
 
 }
+
+
 h2 {
     margin-bottom: 2rem;
 }
-
-
 .btn-submit {
     width: 63%;
     height: 50px;
     background: #26343D;
     color: white;
     cursor: pointer;
-    
-    padding: 0.5rem 2.5rem;
+    margin-top: 1rem;
+    padding: 1.5rem;
     transition: all 0.3s ease-in-out;
   }
 
   .signup .card-container .card .returning-user input{
-    width: 500px;
+    width: 400px;
+    height: 30px;
+    padding:1rem;
+  }
+
+  .email {
+    width: 20px;
   }
   

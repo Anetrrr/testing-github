@@ -5,16 +5,16 @@ import './Login.css'
 const Login = () => {
   return (
     <div className='signup'>
-        <div className='card-container'>
-            <div className='card'>
+        <div className='card-container-pat'>
+            <div className='card-pat'>
                 <h2>Returning Patient</h2>
                 <form className='returning-user'>
                 
-                <label> Email: </label>
+                <label className='email'> Email: </label>
                 <input type='text>' required></input><br></br>
                 <label> Password: </label>
                 <input type='text>' required></input><br></br>
-                <button className='btn-submit' type='submit'>Submit</button>
+                <button className='sub' type='submit'>Submit</button>
                 </form>
         </div>
         </div>

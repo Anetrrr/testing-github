@@ -1,71 +1,101 @@
-import React, {useState} from 'react'
+import React, {useState, useRef} from 'react'
 import {Link} from 'react-router-dom'
 import doctor from '../assets/doctor1.jpg'
 import './RegisterStyles.css'
 import RPatientLogin from '../routes/RPatientLogin'
+
 // import '../index.js'
 
 const Register = () => {
-  const [email,setemail]=useState('');
-  const[Fusername,setFusername]=useState('');
-  const[Susername,setSusername]=useState('');
-  const[pwd1,setpwd1]=useState('');
-  const[pwd2,setpwd2]=useState('');
+    const emailRef = useRef();
+    const fNameRef = useRef();
+    const sNameRef = useRef();
+    const pwdRef = useRef();
+    const confirmPwdRef = useRef();
+    const [loading, setLoading] = useState(false);
+    const [error, setError] = useState("");
+
+
+
   
     
-  const handelsubmit=(e)=>{
+  const handleSubmit=(e)=>{
       e.preventDefault();
+      setLoading(true);
+
+//       const submit = axios.post('/patient',
+//         {
+//             "firstname": fNameRef.current.value,
+//             "lastname": sNameRef.current.value,
+//             "email": emailRef.current.value,
+//             "password": pwdRef.current.value,
+//             "confirm_password": confirmPwdRef.current.value,
+//         }
+//       ).then(d => {
+//              setLoading(false)
+//       }).catch(err => {
+//           console.log(err)
+//           setLoading(false)
+//       })
+   
   }
 
   return (
-        <div className='main-Register'>
-          <div className="left-side">
-                    
-            </div>
-            <div className="right-side">
-               <div className="top-right">
-                       <p>Already have an Account?
-                      
-                          <Link id='Links-signin' to='/patient/login'>Sign In</Link>   
-                          </p> 
-            </div>
-            <div className="body-right">
-                        <div className="container">
-                        <h1>Welcome! Create Account</h1>
-                        <form onSubmit={handelsubmit}>
-                            <div className="input-group">
-                            <h5> First Name</h5>
-                              <input type="text" name="Fname" value={Fusername}
-                              onChange={(e)=>{setFusername(e.target.value)}} id="fname" />
-                            </div>
-                            <div className="input-group">
-                                <h5> Last Name</h5>
-                                <input type="text" name="lname" value={Susername}
-                                onChange={(e)=>{setSusername(e.target.value)}} id="lname" />
-                            </div>
-                            <div className="input-group">
-                                <h5> Email</h5>
-                                <input type="Email" name="email" value={email} 
-                                onChange={(e)=>{setemail(e.target.value)}} id="email1" />
-                            </div>
-                            <div className="input-group">
-                                <h5> Password</h5>
-                                <input type="password" value={pwd1} 
-                                onChange={(e)=>{setpwd1(e.target.value)}}  name="pwd" id="pwd1" />
-                            </div>
-                            <div className="input-group">
-                                <h5> Confirm Password</h5>
-                                <input type="password" value={pwd2}
-                                onChange={(e)=>{setpwd2(e.target.value)}} name="pwd" id="pwd2" />
-                            </div>
-                            <button type="submit" id='sbtn' value="Submit" onClick='submit()'>Submit</button>
-                            </form>
-                        </div>
-
-            </div>
-           
-            </div>
+    <section className="login">
+    <div className="container">
+      <h3 className="title" style={{color: 'orange', marginTop: '3rem', marginLeft: '3rem'}}>New Patient Sign up</h3>
+      
+      <div className="social-login">
+        
+        
+        
+      </div>
+      
+      
+      <form>
+        <div className="form-group" style={{position: 'relative'}} >
+          <label for="firstname"></label>
+          <input type="text" id="fullname" placeholder="First Name" style={{width: '350px' }}/>          
         </div>
+        
+        <div className="form-group">
+          <label for="surname"></label>
+          <input type="text" id="surname" placeholder="Surname" style={{width: '350px' }}/>          
+        </div>
+        
+        <div className="form-group">
+          <label for="login as"></label>
+          <input type="text" id="Login as" placeholder="Login as" style={{width: '350px' }}/>          
+        </div> 
+        
+        <div className="form-group">
+          <label for="dob"></label>
+          <input type="date" id="Age" placeholder='date of birth' style={{width: '350px' }}/>          
+        </div>
+        
+        <div className="form-group">
+          <label for="Email"></label>
+          <input type="Email" id="Email" placeholder="Email Address" style={{width: '350px' }}/>          
+        </div>
+        
+        <div className="form-group">
+          <label for="password"></label>
+          <input type="password" id="password" placeholder="Password" style={{width: '350px' }}/>          
+        </div>
+        
+        <div className="form-group">
+          <label for="password"></label>
+          <input type="password" id="Confirm Password" placeholder="Confirm Password" style={{width: '350px' }}/>          
+        </div>
+        
+        <button type="submit" style={{width: '350px', height:'40px', background: 'transparent', margin: '30px auto', border:'1px solid orange  ', color: 'orange', fontSize: '14px'}}>Sign up</button>
+      </form>
+      
+      <p className="additional-act" style={{marginTop: '150px', marginBottom: '50px', marginLeft: '200px' }}>Already have an account? <span><Link to='/patient/login'> Sign in </Link></span></p>
+      
+      
+    </div>
+  </section>
     )
 }
 

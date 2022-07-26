@@ -1,0 +1,163 @@
+.doctor-card{
+    max-width:700px;
+    background: #18978F;
+    margin: auto;
+    height: 45vh;
+    position: relative;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+    .info{
+      padding: 15px;
+      display: grid;
+      grid-template-columns: 90px auto;
+    }     
+      .avatar{
+        overflow: hidden;
+        height:72px;
+        width:72px;
+        border-radius:3px;
+        margin-top:5px;
+      }   
+        
+      
+      .details{
+        align-self:center;
+        padding:10px 0;
+        color: red;
+      }
+        .name{
+          font-size:18px;
+          line-height:1;
+          padding:2px 0;
+          font-weight:400
+        }
+        
+        .meta-info{
+          padding:2px 0;
+          color: #fff;
+          line-height: 22px;
+          font-weight:400;
+        }
+          
+      
+      @media(max-width:575px){
+        
+        
+        .details{
+          text-align:center;
+        }
+          
+          .meta-info{
+            padding:5px;
+          }
+            .exp-yr{
+              display:block;
+            }
+             
+              }
+    
+    .actions{
+      margin: 0 15px 15px;
+      display: table;
+      width:calc(100% - 30px); 
+      border-collapse: collapse;
+      border-radius: 3px;
+      border-style: hidden;
+      box-shadow: 0 0 0 1px #f6f7f8;
+    }
+     .actions > div{
+        text-align:center;
+        padding:0;
+        display:table-cell;
+        border:1px solid #f2f2f2;
+        vertical-align:middle;
+        height: 64px;
+      }
+      
+      .actions .ratings{
+        width:24%;
+      }
+        .actions .rating-control{
+          display:block;
+        }
+          
+          .actions .fa{
+            font-size:18px;
+            color:yellow;
+          }
+        
+        .actions .rating-count{
+          font-size: 12px;
+          text-transform:uppercase;
+          color:#fff;
+        }
+      
+      .actions .comments{
+        width:23%;
+      }
+      .consultation{
+        width:23%;
+      }
+        
+    .consultation .fee{
+          
+            display:block;
+           
+            font-size:18px;
+            font-weight:400;
+            line-height: 20px;
+          
+          
+          font-size: 12px;
+          text-transform:uppercase;
+          color:#fff;
+        }
+      
+      .actions .appo{
+        width:30%;
+      }
+        
+        .actions .btn{
+         
+          display:block;
+          text-decoration:none;
+          color: #fff;
+          text-transform: uppercase;
+          padding:15px;
+          margin:0 5px;
+        }
+      
+      
+      @media(max-width:575px){
+    
+    .locations{
+      padding: 15px 15px 20px;
+      background: #fafafa;
+      border-top:1px solid #f6f7f8;
+      border-radius: 0 0 2px 2px;
+      line-height:1;
+      font-size:12px;
+      color:#fff;
+      font-weight:400;
+      text-transform:capitalize;
+      
+      @media(max-width:575px){
+        text-align:center
+      }
+    }
+    
+    .certified::after{
+      content: '';
+      background: url('//via.placeholder.com/100') no-repeat;
+      background-size:contain;
+      height:30px;
+      width:30px;
+      position: absolute;
+      top:10px;
+      right: 10px;
+      border-radius:50%
+    }
+    
+   
+  }

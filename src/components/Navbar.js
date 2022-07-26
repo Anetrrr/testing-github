@@ -19,16 +19,14 @@ function Navbar() {
             <Link to='/'>Home</Link>
           </li>
           <li>
-            <Link to='/pricing'>About</Link>
+            <Link to='/about'>About</Link>
           </li>
           <li>
-            <Link to='/training'>List Practice</Link>
+            <Link to='/login/ask' className='doc-login'>Login</Link>
           </li>
             
-          <Link to='/contact' className='btn'><button className='btn-login'>Login / Sign up</button><ul className='login-hover'>
-              <li><Link to='/patient/login'>Login as patient</Link></li>
-              <li><Link to='/practice/login'>Login as practice</Link></li>
-              </ul></Link>
+          <Link to='/signup/ask' className='btn'><button className='btn-login'> Sign up  </button>
+          </Link>
       </ul>
         <div className='hamburger' onClick= {handleClick}>
             {click ? (<FaTimes size ={20} style= {{color: '#383838'}} />): (<FaBars size ={20} style= {{color: '#383838'}} />)}

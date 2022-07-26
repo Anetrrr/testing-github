@@ -1,14 +1,14 @@
 .signup .card-container .card{
     display:flex;
     flex-direction: column;
-    width: 700px;
+    justify-content: center;
+    align-items: center;
     padding-left: 2rem;
-    margin-top: 3rem;
+    color: orange;
+    
 
 }
-h2 {
-    margin-bottom: 2rem;
-}
+
 
 
 .btn-submit {
@@ -17,12 +17,16 @@ h2 {
     background: #26343D;
     color: white;
     cursor: pointer;
-    
-    padding: 0.5rem 2.5rem;
-    transition: all 0.3s ease-in-out;
+    margin-top: 1rem;
+    padding: 1.5rem;
   }
 
   .signup .card-container .card .returning-user input{
-    width: 500px;
+    width: 200px;
+    height: 20px;
+  }
+
+  .email {
+    width: 20px;
   }
   

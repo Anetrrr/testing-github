@@ -24,14 +24,20 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 2rem;
 }
+.categories:hover{
+    transition: all .2s ease;
+    color: #f7ecde;
+}
+
 
 .categories svg{
     width: 25px !important;
 }
 
 .categories span {
-    color: #fff !important;
+    color: #f7ecde !important;
     margin: 0.5rem 0 0;
     font-size: 0.8rem;
 }

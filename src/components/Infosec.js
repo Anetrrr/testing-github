@@ -11,8 +11,8 @@ const infosec = () => {
         <div className='hero-container'>
           <div className='content'>
             <div className='title'>Healthcare Technology</div>
-            <div className='headline'>Your Healthcare. 
-              <span className='span'> In your control.</span>
+            <div className='headline'>Your Healthcare.
+              <span> In your control.</span>
             </div> 
             <div className='note'>You can set your own appointments at your convenience and have the best hands cater for your health.</div>
             <div className='button'>

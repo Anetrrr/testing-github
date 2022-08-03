@@ -19,7 +19,7 @@
 
 h1, p, a {
   color: var(--txtcolor);
-  font-family: 'Inter';
+  font-family: 'Poppins', sans-serif;
   font-weight: 600;
 }
 

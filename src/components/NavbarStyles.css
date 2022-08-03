@@ -12,8 +12,8 @@
     background: #F7ecde;
 }
 .doc-login {
-    text-decoration: underline;
-    
+    border-bottom: #18978F solid 2px;
+    padding: .5rem;
 }
 .nav-brand{
     display: flex;

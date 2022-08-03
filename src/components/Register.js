@@ -91,7 +91,7 @@ const Register = () => {
         <button type="submit" style={{width: '350px', height:'40px', background: 'transparent', margin: '30px auto', border:'1px solid orange  ', color: 'orange', fontSize: '14px'}}>Sign up</button>
       </form>
       
-      <p className="additional-act" style={{marginTop: '150px', marginBottom: '50px', marginLeft: '200px' }}>Already have an account? <span><Link to='/patient/login'> Sign in </Link></span></p>
+      <p className="additional-act" style={{marginTop: '150px', marginBottom: '50px', marginLeft: '200px' }}> <span className='already'>Already have an account? </span><span><Link to='/patient/login'> Sign in </Link></span></p>
       
       
     </div>
